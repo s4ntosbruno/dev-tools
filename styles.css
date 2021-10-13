@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #00aa00;
+}
+
+body {
+  background-color: #333;
+  font-family: "Roboto Mono", sans-serif;
+  margin: 2em;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+.hidden {
+  display: none;
+}
