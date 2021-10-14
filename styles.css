@@ -25,7 +25,7 @@ header {
 }
 
 section {
-  height: 60vh;
+  height: 70vh;
   margin-bottom: 2em;
 }
 
@@ -37,17 +37,19 @@ h1 {
   display: none;
 }
 
-ul {
+ul,
+ol {
   line-height: 2.5;
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--primary-color);
 }
 
 a {
   color: var(--primary-color);
-}
-
-button:disabled {
-  border: 0.1em solid var(--secundary-color);
-  color: var(--secundary-color);
+  text-decoration: none;
 }
 
 button {
@@ -67,13 +69,18 @@ button:not([disabled]):hover {
   cursor: pointer;
 }
 
+button:disabled {
+  border: 0.1em solid var(--secundary-color);
+  color: var(--secundary-color);
+}
+
 .btn-small {
   padding: 0 0.5em;
 }
 
 @media only screen and (max-width: 650px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   header {
@@ -86,18 +93,20 @@ button:not([disabled]):hover {
     align-items: center;
   }
 
-  section {
-    height: 60vh;
+  ul,
+  ol {
+    padding-left: 2.5em;
   }
 
-  button:first-child,
-  #previous {
-    margin-bottom: 1em;
+  h2,
+  h3,
+  p {
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 400px) {
   body {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
