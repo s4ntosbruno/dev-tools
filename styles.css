@@ -16,6 +16,7 @@ body {
   color: var(--secundary-color);
   font-size: 22px;
   transition: all 0.5s;
+  line-height: 2.5;
 }
 
 header {
@@ -35,11 +36,6 @@ h1 {
 
 .hidden {
   display: none;
-}
-
-ul,
-ol {
-  line-height: 2.5;
 }
 
 ul li::marker,
@@ -81,6 +77,7 @@ button:disabled {
 @media only screen and (max-width: 700px) {
   body {
     font-size: 14px;
+    line-height: 3;
   }
 
   header {
@@ -98,13 +95,12 @@ button:disabled {
     padding-left: 2.5em;
   }
 
-  h2,
-  h3 {
+  h2 {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   body {
     font-size: 11px;
   }
