@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>dev tools</title>
+    <link rel="icon" href="logo.ico" />
+    <title>devTools</title>
   </head>
   <body>
-    <header><h1>css</h1></header>
+    <header>
+      <h1>css</h1>
+      <div>
+        <button class="btn-small" onclick="changeColors(0)">R</button>
+        <button class="btn-small" onclick="changeColors(1)">G</button>
+        <button class="btn-small" onclick="changeColors(2)">B</button>
+        <button class="btn-small" onclick="changeColors(3)">R + B</button>
+        <button class="btn-small" onclick="changeColors(4)">G + B</button>
+        <button class="btn-small" onclick="changeColors(5)">R + G</button>
+      </div>
+    </header>
     <main>
-      <section id="dom-navigation">
+      <section class="hidden" id="dom-navigation">
         <h2>navegar na DOM</h2>
         <ul>
           <li>clique com o direito > inspecionar (abre o elemento na DOM)</li>
@@ -18,12 +29,12 @@
             pesquisar na DOM (CTRL + F), aceita:
             <ul>
               <li>string</li>
-              <li>seletores CSS ex.: section[class="hiddean"]</li>
-              <li>XPath queries ex.: //section/ul/li</li>
+              <li>seletores CSS ex.: section[class="hidden"]</li>
+              <li>XPath query ex.: //section/ul/li</li>
             </ul>
           </li>
           <li>
-            Referenciar um elemento pelo js na aba console:
+            referenciar um elemento pelo js na aba console:
             <ul>
               <li>inspect(document.querySelector('section'))</li>
             </ul>
@@ -31,18 +42,19 @@
         </ul>
       </section>
       <section class="hidden" id="styles-tab">
-        <h2>Styles tab</h2>
+        <h2>styles tab</h2>
+        <p>mostra todas as declarações css para o elemento selecionado.</p>
         <p>
-          Mostra todas as declarações css para o elemento selecionado. Útil para
-          para analisar a
+          útil para para analisar a
           <a
             href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance"
+            target="_blank"
             >ordem de cascata</a
           >
         </p>
         <ul>
-          <li>Selecione um elemento para ver seu css</li>
-          <li>Filtro geral (propiedades, valores, classes, id)</li>
+          <li>selecione um elemento para ver seu css</li>
+          <li>filtro geral (propiedades, valores, classes, id)</li>
         </ul>
       </section>
       <section class="hidden" id="computed-tab">
@@ -56,7 +68,7 @@
           <li>filtro geral</li>
         </ul>
       </section>
-      <section class="hidden" id="prototype-classes">
+      <section class="hidden" id="classes">
         <h2>prototipando css - classes</h2>
         <p>rapidamente adicione e remova classes</p>
         <ol>
@@ -64,7 +76,7 @@
           <li>no botão <b>:cls</b></li>
         </ol>
       </section>
-      <section class="hidden" id="prototype-pseudo-classes">
+      <section class="hidden" id="pseudo-classes">
         <h2>prototipando css - pseudo-classes</h2>
         <p>como usar:</p>
         <ol>
@@ -81,7 +93,7 @@
         </ul>
       </section>
       <section class="hidden" id="contrast">
-        <h2>Relação de contraste (texto e fundo)</h2>
+        <h2>relação de contraste (texto e fundo)</h2>
         <p>indica se o texto está legível com a cor de fundo atual.</p>
         <ol>
           <li>inspeciona um elemento</li>
@@ -90,7 +102,7 @@
           <li>clica no quadrado ao lado do valor da cor</li>
         </ol>
       </section>
-      <section class="hidden" id="code-coverage">
+      <section class="hidden" id="coverage">
         <h2>code coverage</h2>
         <p>
           quanto o css ou js está contribuindo nos elementos visuais
@@ -120,8 +132,11 @@
       <section class="hidden" id="animations">
         <h2>animações</h2>
       </section>
-      <button id="previous">anterior</button>
-      <button id="next">próximo</button>
+      <div>
+        <button onclick="showPreviousSection()" id="previous">anterior</button>
+        <button onclick="showNextSection()" id="next">próximo</button>
+      </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
