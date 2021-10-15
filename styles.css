@@ -7,14 +7,19 @@
   --primary-color: #0f7;
   --secundary-color: #efffef;
   --tertiary-color: #010;
+  height: 100vh;
 }
 
 body {
-  background-color: var(--tertiary-color);
-  font-family: "Roboto Mono", sans-serif;
-  margin: 2em;
-  color: var(--secundary-color);
   font-size: 22px;
+  font-family: "Roboto Mono", sans-serif;
+  background-color: var(--tertiary-color);
+  color: var(--secundary-color);
+  height: 100vh;
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   transition: all 0.5s;
 }
 
@@ -25,8 +30,7 @@ header {
 }
 
 section {
-  height: 60vh;
-  margin-bottom: 2em;
+  min-height: 50vh;
 }
 
 h1 {
@@ -37,12 +41,14 @@ h1 {
   display: none;
 }
 
-ul {
-  line-height: 2.5;
-}
-
 a {
   color: var(--primary-color);
+}
+
+ul,
+ol {
+  padding-left: 1em;
+  line-height: 2;
 }
 
 button:disabled {
@@ -80,24 +86,23 @@ button:not([disabled]):hover {
     flex-direction: column;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  footer {
+    text-align: center;
   }
 
-  section {
-    height: 60vh;
-  }
-
-  button:first-child,
-  #previous {
-    margin-bottom: 1em;
+  h2 {
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 400px) {
   body {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
   }
 }

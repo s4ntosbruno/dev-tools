@@ -9,134 +9,138 @@
     <title>devTools</title>
   </head>
   <body>
-    <header>
-      <h1>css</h1>
-      <div>
-        <button class="btn-small" onclick="changeColors(0)">R</button>
-        <button class="btn-small" onclick="changeColors(1)">G</button>
-        <button class="btn-small" onclick="changeColors(2)">B</button>
-        <button class="btn-small" onclick="changeColors(3)">R + B</button>
-        <button class="btn-small" onclick="changeColors(4)">G + B</button>
-        <button class="btn-small" onclick="changeColors(5)">R + G</button>
-      </div>
-    </header>
-    <main>
-      <section class="hidden" id="dom-navigation">
-        <h2>navegar na DOM</h2>
-        <ul>
-          <li>clique com o direito > inspecionar (abre o elemento na DOM)</li>
-          <li>
-            pesquisar na DOM (CTRL + F), aceita:
-            <ul>
-              <li>string</li>
-              <li>seletores CSS ex.: section[class="hidden"]</li>
-              <li>XPath query ex.: //section/ul/li</li>
-            </ul>
-          </li>
-          <li>
-            referenciar um elemento pelo js na aba console:
-            <ul>
-              <li>inspect(document.querySelector('section'))</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="hidden" id="styles-tab">
-        <h2>styles tab</h2>
-        <p>mostra todas as declarações css para o elemento selecionado.</p>
-        <p>
-          útil para para analisar a
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance"
-            target="_blank"
-            >ordem de cascata</a
-          >
-        </p>
-        <ul>
-          <li>selecione um elemento para ver seu css</li>
-          <li>filtro geral (propiedades, valores, classes, id)</li>
-        </ul>
-      </section>
-      <section class="hidden" id="computed-tab">
-        <h2>computed tab</h2>
-        <p>não precisa ver a ordem de cascata? Olhe o computed</p>
-        <p>mostra quais propriedades estão aplicadas no elemento selecionado</p>
-        <ul>
-          <li>
-            clica na declaração pra ver a cascata própria daquela propriedade
-          </li>
-          <li>filtro geral</li>
-        </ul>
-      </section>
-      <section class="hidden" id="classes">
-        <h2>prototipando css - classes</h2>
-        <p>rapidamente adicione e remova classes</p>
-        <ol>
-          <li>na aba de styles</li>
-          <li>no botão <b>:cls</b></li>
-        </ol>
-      </section>
-      <section class="hidden" id="pseudo-classes">
-        <h2>prototipando css - pseudo-classes</h2>
-        <p>como usar:</p>
-        <ol>
-          <li>na aba de styles</li>
-          <li>no botão <b>:hov</b></li>
-        </ol>
-        <p>mantém um estado especial:</p>
-        <ul>
-          <li>:hover</li>
-          <li>:active</li>
-          <li>:focus-within</li>
-          <li>:focus</li>
-          <li>:visited</li>
-        </ul>
-      </section>
-      <section class="hidden" id="contrast">
-        <h2>relação de contraste (texto e fundo)</h2>
-        <p>indica se o texto está legível com a cor de fundo atual.</p>
-        <ol>
-          <li>inspeciona um elemento</li>
-          <li>na aba de styles</li>
-          <li>na declaração de <b>color</b></li>
-          <li>clica no quadrado ao lado do valor da cor</li>
-        </ol>
-      </section>
-      <section class="hidden" id="coverage">
-        <h2>code coverage</h2>
-        <p>
-          quanto o css ou js está contribuindo nos elementos visuais
-          <b>atuais</b> da página
-        </p>
-        <p>útil para limpar linhas de código não utilizadas</p>
-      </section>
-      <section class="hidden" id="copying-styles">
-        <h2>copiar estilos</h2>
-        <ol>
-          <li>clique com o direito</li>
-          <li>copiar</li>
-          <li>copiar estilos</li>
-        </ol>
-      </section>
-      <section class="hidden" id="screenshots">
-        <h2>screenshots</h2>
-        <ul>
-          <li>command Menu > capture screenshot</li>
-          <li>command Menu > capture full size screenshot (toda a página)</li>
-          <li>command Menu > capture area screenshot (área escolhida)</li>
-          <li>
-            command Menu > capture node screenshot (do elemento selecionado)
-          </li>
-        </ul>
-      </section>
-      <section class="hidden" id="animations">
-        <h2>animações</h2>
-      </section>
-      <div>
-        <button onclick="showPreviousSection()" id="previous">anterior</button>
-        <button onclick="showNextSection()" id="next">próximo</button>
-      </div>
-    </main>
+    <div>
+      <header>
+        <h1>css</h1>
+        <div>
+          <button class="btn-small" onclick="changeColors(0)">R</button>
+          <button class="btn-small" onclick="changeColors(1)">G</button>
+          <button class="btn-small" onclick="changeColors(2)">B</button>
+          <button class="btn-small" onclick="changeColors(3)">R + B</button>
+          <button class="btn-small" onclick="changeColors(4)">G + B</button>
+          <button class="btn-small" onclick="changeColors(5)">R + G</button>
+        </div>
+      </header>
+      <main>
+        <section class="hidden" id="dom-navigation">
+          <h2>navegar na DOM</h2>
+          <p>clique com o direito > inspecionar (abre o elemento na DOM)</p>
+          <ul>
+            <li>
+              pesquisar na DOM (CTRL + F), aceita:
+              <ul>
+                <li>string</li>
+                <li>seletores CSS ex.: section[class="hidden"]</li>
+                <li>XPath query ex.: //section/ul/li</li>
+              </ul>
+            </li>
+            <li>
+              referenciar um elemento pelo js na aba console:
+              <ul>
+                <li>inspect(document.querySelector('section'))</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="hidden" id="styles-tab">
+          <h2>styles tab</h2>
+          <p>mostra todas as declarações css para o elemento selecionado.</p>
+          <p>
+            útil para para analisar a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance"
+              target="_blank"
+              >ordem de cascata</a
+            >
+          </p>
+          <ul>
+            <li>selecione um elemento para ver seu css</li>
+            <li>filtro geral (propiedades, valores, classes, id)</li>
+          </ul>
+        </section>
+        <section class="hidden" id="computed-tab">
+          <h2>computed tab</h2>
+          <p>não precisa ver a ordem de cascata? Olhe o computed</p>
+          <p>
+            mostra quais propriedades estão aplicadas no elemento selecionado
+          </p>
+          <ul>
+            <li>
+              clica na declaração pra ver a cascata própria daquela propriedade
+            </li>
+            <li>filtro geral</li>
+          </ul>
+        </section>
+        <section class="hidden" id="classes">
+          <h2>prototipando css - classes</h2>
+          <p>rapidamente adicione e remova classes</p>
+          <ol>
+            <li>na aba de styles</li>
+            <li>no botão <b>:cls</b></li>
+          </ol>
+        </section>
+        <section class="hidden" id="pseudo-classes">
+          <h2>prototipando css - pseudo-classes</h2>
+          <p>como usar:</p>
+          <ol>
+            <li>na aba de styles</li>
+            <li>no botão <b>:hov</b></li>
+          </ol>
+          <p>mantém um estado especial:</p>
+          <ul>
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:focus-within</li>
+            <li>:focus</li>
+            <li>:visited</li>
+          </ul>
+        </section>
+        <section class="hidden" id="contrast">
+          <h2>relação de contraste (texto e fundo)</h2>
+          <p>indica se o texto está legível com a cor de fundo atual.</p>
+          <ol>
+            <li>inspeciona um elemento</li>
+            <li>na aba de styles</li>
+            <li>na declaração de <b>color</b></li>
+            <li>clica no quadrado ao lado do valor da cor</li>
+          </ol>
+        </section>
+        <section class="hidden" id="coverage">
+          <h2>code coverage</h2>
+          <p>
+            quanto o css ou js está contribuindo nos elementos visuais
+            <b>atuais</b> da página
+          </p>
+          <p>útil para limpar linhas de código não utilizadas</p>
+        </section>
+        <section class="hidden" id="copying-styles">
+          <h2>copiar estilos</h2>
+          <ol>
+            <li>clique com o direito</li>
+            <li>copiar</li>
+            <li>copiar estilos</li>
+          </ol>
+        </section>
+        <section class="hidden" id="screenshots">
+          <h2>screenshots</h2>
+          <ul>
+            <li>command Menu > capture screenshot</li>
+            <li>command Menu > capture full size screenshot (toda a página)</li>
+            <li>command Menu > capture area screenshot (área escolhida)</li>
+            <li>
+              command Menu > capture node screenshot (do elemento selecionado)
+            </li>
+          </ul>
+        </section>
+        <section class="hidden" id="animations">
+          <h2>animações</h2>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <button onclick="showPreviousSection()" id="previous">anterior</button>
+      <button onclick="showNextSection()" id="next">próximo</button>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
