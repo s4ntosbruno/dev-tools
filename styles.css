@@ -8,11 +8,10 @@
   --primary-color: #0f7;
   --secundary-color: #efffef;
   --tertiary-color: #010;
-  height: 100vh;
 }
 
 body {
-  font-size: 2vmin;
+  font-size: 2.5vmin;
   font-family: "Roboto Mono", sans-serif;
   background-color: var(--tertiary-color);
   color: var(--secundary-color);
@@ -47,11 +46,6 @@ ul,
 ol {
   padding-left: 2em;
   line-height: 2;
-}
-
-button:disabled {
-  border: 0.1em solid var(--secundary-color);
-  color: var(--secundary-color);
 }
 
 button {
@@ -93,10 +87,7 @@ button:disabled {
     flex-direction: column;
   }
 
-  footer {
-    text-align: center;
-  }
-
+  footer,
   h2 {
     text-align: center;
   }
