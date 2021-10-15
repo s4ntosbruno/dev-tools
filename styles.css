@@ -20,7 +20,7 @@ body {
   margin: 0 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   transition: all 0.5s;
 }
 
@@ -40,6 +40,7 @@ h1 {
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 ul,
@@ -83,7 +84,7 @@ button:disabled {
   display: none;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 425px) {
   body {
     font-size: 3.5vmin;
   }
