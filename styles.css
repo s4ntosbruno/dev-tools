@@ -73,13 +73,19 @@ button:not([disabled]):hover {
   cursor: pointer;
 }
 
+button:disabled {
+  border: 0.1em solid var(--secundary-color);
+  color: var(--secundary-color);
+}
+
 .btn-small {
   padding: 0 0.5em;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 3;
   }
 
   header {
@@ -97,7 +103,7 @@ button:not([disabled]):hover {
 
 @media only screen and (max-width: 400px) {
   body {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
