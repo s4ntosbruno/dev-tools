@@ -23,23 +23,33 @@
     <main>
       <section class="hidden" id="dom-navigation">
         <h2>navegar na DOM</h2>
-        <p>clique com o direito > inspecionar (abre o elemento na DOM)</p>
+        <p>clique com o direito > inspecionar</p>
         <ul>
           <li>
-            pesquisar na DOM (CTRL + F), aceita:
+            pesquisar na DOM <kbd>Control</kbd> + <kbd>f</kbd>:
             <ul>
               <li>string</li>
-              <li>seletores CSS ex.: section[class="hidden"]</li>
-              <li>XPath query ex.: //section/ul/li</li>
+              <li>seletores CSS: <b>section[class="hidden"]</b></li>
+              <li>XPath query: <b>//section/ul/li</b></li>
             </ul>
           </li>
           <li>
             referenciar um elemento pelo js na aba console:
             <ul>
-              <li>inspect(document.querySelector('section'))</li>
+              <li><b>inspect(document.querySelector('section'))</b></li>
             </ul>
           </li>
         </ul>
+      </section>
+      <section class="hidden" id="docking">
+        <h2>docking</h2>
+        <ol>
+          <li>Abrir o <b>Command Menu</b></li>
+          <ul>
+            <li><kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></li>
+            <li><kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac)</li>
+          </ul>
+        </ol>
       </section>
       <section class="hidden" id="styles-tab">
         <h2>styles tab</h2>

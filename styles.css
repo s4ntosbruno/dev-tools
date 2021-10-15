@@ -42,10 +42,33 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:visited {
+  opacity: 0.8;
+}
+
 ul,
 ol {
   padding-left: 2em;
   line-height: 2;
+}
+
+kbd {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3em;
+  box-shadow: 1px 1px 1px var(--primary-color);
+  padding: 0 0.5em;
+  vertical-align: text-bottom;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+b {
+  color: var(--primary-color);
 }
 
 button {
@@ -72,6 +95,10 @@ button:disabled {
 
 .btn-small {
   padding: 0 0.5em;
+}
+
+.btn-medium {
+  padding: 0 0.7em;
 }
 
 .hidden {

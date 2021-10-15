@@ -1,5 +1,6 @@
 const sections = [
   "dom-navigation",
+  "docking",
   "styles-tab",
   "computed-tab",
   "classes",
