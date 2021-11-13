@@ -19,7 +19,7 @@ body {
   margin: 0 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   transition: all 0.5s;
 }
 
@@ -27,6 +27,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  margin-bottom: 2em;
 }
 
 section {
@@ -49,8 +53,9 @@ a:visited {
 
 ul,
 ol {
-  padding-left: 2em;
+  padding-left: 1em;
   line-height: 2;
+  list-style: square;
 }
 
 kbd {

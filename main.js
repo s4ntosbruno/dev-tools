@@ -9,7 +9,6 @@ const sections = [
   "coverage",
   "copying-styles",
   "screenshots",
-  "animations",
 ];
 
 const root = document.querySelector(":root");
